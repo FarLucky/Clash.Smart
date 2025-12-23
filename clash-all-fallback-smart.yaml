@@ -396,7 +396,6 @@ rules:
   - RULE-SET,Telegram / Domain,国外
   - RULE-SET,Proxy / Domain,国外
   - RULE-SET,AutoProxy / Domain,国外
-  - RULE-SET,AutoDirect / Domain,国内
   - RULE-SET,Globe / Domain,国外
   - RULE-SET,Direct / Domain,国内
   - RULE-SET,China / Domain,国内
@@ -448,7 +447,6 @@ rule-providers:
   Nintend / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/ios_rule_script//master/rule/Clash/Nintendo/Nintendo.list" }
   Proxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/clash/refs/heads/main/list/Proxy.list" }
   AutoProxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoProxy.list" }
-  AutoDirect / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoDirect.list" }
   Globe / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/ios_rule_script//refs/heads/master/rule/Clash/Global/Global.list" }
   Direct / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/clash/refs/heads/main/list/Direct.list" }
   China / Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/meta-rules-dat/refs/heads/meta/geo/geosite/cn.mrs" }
