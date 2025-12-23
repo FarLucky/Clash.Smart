@@ -431,7 +431,7 @@ rule-providers:
   Microsoft / Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.mrs" }
   OKX / Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/meta-rules-dat/refs/heads/meta/geo/geosite/okx.mrs" }
   Bybit / Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/meta-rules-dat/refs/heads/meta/geo/geosite/bybit.mrs" }
-  Binance / Domain: { <<: *domain, url: https://gh-proxy.com/raw.githubusercontent.com/FarLucky/meta-rules-dat/refs/heads/meta/geo/geosite/binance.mrs" }
+  Binance / Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/meta-rules-dat/refs/heads/meta/geo/geosite/binance.mrs" }
   TikTok / Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/meta-rules-dat/refs/heads/meta/geo/geosite/tiktok.mrs" }
   Netflix / Domain: { <<: *domain, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/meta-rules-dat/refs/heads/meta/geo/geosite/netflix.mrs" }
   Netflix / IP: { <<: *ip, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/meta-rules-dat/refs/heads/meta/geo/geoip/netflix.mrs" }
