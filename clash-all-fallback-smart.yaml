@@ -16,16 +16,6 @@ proxy-providers:
       interval: 300
     proxy: 直连
 
-  HongXingYun:
-    url: "https://43.139.248.121:9000/hxyunvip?token=d5e1017315918ac7cf13e387a7909fda"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连
-
 proxies:
   - { name: 直连, type: direct }
   - { name: 拒绝, type: reject }
