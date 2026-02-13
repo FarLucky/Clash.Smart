@@ -436,6 +436,7 @@ rule-providers:
   PlayStation / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PlayStation/PlayStation.list" }
   Nintend / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.list" }
   Proxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Proxy.list" }
+  Direct / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoDirect.list" }
   AutoProxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoProxy.list" }
   Globe / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list" }
   Direct / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Direct.list" }
