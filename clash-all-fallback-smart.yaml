@@ -7,7 +7,7 @@
 proxy-providers:
 
   PaoPaoDog:
-    url: "https://times1763236477.subxiandan.top:9604/v2b/paopaogou/api/v1/client/subscribe?token=0c49eb9a0c4dd862bcfc27a848510fec"
+    url: "https://times1770994863.subxiandan.top:9604/v2b/paopaogou/api/v1/client/subscribe?token=0c49eb9a0c4dd862bcfc27a848510fec"
     type: http
     interval: 86400
     health-check:
