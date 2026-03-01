@@ -5,9 +5,19 @@
 # 机场节点订阅
 
 proxy-providers:
+  
+  #  PaoPaoDog:
+  #    url: "https://times1763236477.subxiandan.top:9604/v2b/paopaogou/api/v1/client/subscribe?token=0c49eb9a0c4dd862bcfc27a848510fec"
+  #    type: http
+  #    interval: 86400
+  #    health-check:
+  #      enable: true
+  #      url: https://www.gstatic.com/generate_204
+  #      interval: 300
+  #    proxy: 直连
 
-  PaoPaoDog:
-    url: "https://times1770994863.subxiandan.top:9604/v2b/paopaogou/api/v1/client/subscribe?token=0c49eb9a0c4dd862bcfc27a848510fec"
+  EEOX:
+    url: "https://api.eeox.net/api/v1/client/subscribe?token=f7ba1cfa73c42686a40c4fb9e9523861"
     type: http
     interval: 86400
     health-check:
@@ -177,7 +187,7 @@ proxy-groups:
   - name: 香港-智选
     type: smart
     include-all: true
-    policy-priority: ""
+    policy-priority: "牛逼:0.8"
     uselightgbm: true
     collectdata: true
     interval: 300
@@ -199,7 +209,7 @@ proxy-groups:
   - name: 台湾-智选
     type: smart
     include-all: true
-    policy-priority: ""
+    policy-priority: "牛逼:0.8"
     uselightgbm: true
     collectdata: true
     interval: 300
@@ -221,7 +231,7 @@ proxy-groups:
   - name: 日本-智选
     type: smart
     include-all: true
-    policy-priority: ""
+    policy-priority: "牛逼:0.8"
     uselightgbm: true
     collectdata: true
     interval: 300
@@ -243,7 +253,7 @@ proxy-groups:
   - name: 新加坡-智选
     type: smart
     include-all: true
-    policy-priority: ""
+    policy-priority: "牛逼:0.8"
     uselightgbm: true
     collectdata: true
     interval: 300
@@ -265,7 +275,7 @@ proxy-groups:
   - name: 韩国-智选
     type: smart
     include-all: true
-    policy-priority: ""
+    policy-priority: "牛逼:0.8"
     uselightgbm: true
     collectdata: true
     interval: 300
@@ -287,7 +297,7 @@ proxy-groups:
   - name: 美国-智选
     type: smart
     include-all: true
-    policy-priority: ""
+    policy-priority: "牛逼:0.8"
     uselightgbm: true
     collectdata: true
     interval: 300
@@ -309,7 +319,7 @@ proxy-groups:
   - name: 英国-智选
     type: smart
     include-all: true
-    policy-priority: ""
+    policy-priority: "牛逼:0.8"
     uselightgbm: true
     collectdata: true
     interval: 300
@@ -331,7 +341,7 @@ proxy-groups:
   - name: 其他-智选
     type: smart
     include-all: true
-    policy-priority: ""
+    policy-priority: "牛逼:0.8"
     uselightgbm: true
     collectdata: true
     interval: 300
@@ -436,7 +446,6 @@ rule-providers:
   PlayStation / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PlayStation/PlayStation.list" }
   Nintend / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.list" }
   Proxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Proxy.list" }
-  Direct / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoDirect.list" }
   AutoProxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoProxy.list" }
   Globe / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list" }
   Direct / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Direct.list" }
