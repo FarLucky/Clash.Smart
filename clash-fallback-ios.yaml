@@ -136,8 +136,9 @@ proxy-groups:
   # 业务分流组
   - {name: AI, <<: *default}
   - {name: Google, <<: *default}
-  - {name: YouTube, <<: *default}
-  - { name: Twitter, <<: *default }
+  - {name: Youtube, <<: *default}
+  - {name: Twitter, <<: *default }
+  - {name: Telegram, <<: *default}
 #  - {name: Stream Media, <<: *default}
   - {name: TikTok, <<: *default }
   - {name: GitHub, <<: *default}
@@ -299,7 +300,7 @@ rules:
   - RULE-SET,Meta AI / Domain,AI
   - RULE-SET,Perplexity / Domain,AI
   - RULE-SET,Google / Domain,Google
-  - RULE-SET,Microsoft / Domain,Microsoft
+#  - RULE-SET,Microsoft / Domain,Microsoft
   - RULE-SET,Apple / Domain,Apple
   - RULE-SET,Apple-CN / Domain,Apple
   - RULE-SET,Apple-Custome / Domain,Apple
@@ -307,7 +308,7 @@ rules:
 #  - RULE-SET,Bybit / Domain,Crypto
 #  - RULE-SET,Binance / Domain,Crypto
   - RULE-SET,Telegram / Domain,Telegram
-  - RULE-SET,YouTube / Domain,Youtube
+  - RULE-SET,Youtube / Domain,Youtube
   - RULE-SET,TikTok / Domain,TikTok
 #  - RULE-SET,Netflix / Domain,Stream Media
 #  - RULE-SET,Netflix / IP,Stream Media,no-resolve
@@ -324,7 +325,7 @@ rules:
 #  - RULE-SET,UBI / Domain,Games
 #  - RULE-SET,PlayStation / Domain,Games
 #  - RULE-SET,Nintend / Domain,Games
-  - RULE-SET,Nvidia / Domain,Nvidia
+#  - RULE-SET,Nvidia / Domain,Nvidia
 #  - RULE-SET,Reddit / Domain,Reddit
   - RULE-SET,Proxy / Domain,国外
   - RULE-SET,Globe / Domain,国外
