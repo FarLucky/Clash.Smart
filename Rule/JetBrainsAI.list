@@ -6,3 +6,10 @@
  - DOMAIN-KEYWORD,api.app.prod.grazie.aws.intellij.net
  - DOMAIN-KEYWORD,api.ai.jetbrains.com.cn
  - DOMAIN-KEYWORD,api.jetbrains.ai
+
+ - DOMAIN-SUFFIX,jetbrains.ai
+ - DOMAIN-SUFFIX,jetbrains.cloud
+ - DOMAIN-SUFFIX,jetbrains.com
+ - DOMAIN-SUFFIX,jetbrains.net
+ - DOMAIN-SUFFIX,jetbrains.space
+ - DOMAIN-SUFFIX,jetbrains.team
