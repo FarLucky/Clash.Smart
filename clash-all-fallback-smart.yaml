@@ -7,7 +7,7 @@
 proxy-providers:
   
   PaoPaoDog:
-    url: "https://times1775396810.subxiandan.top:9604/v2b/paopaogou/api/v1/client/subscribe?token=f550e52b652c1458e99c585c7a209386"
+    url: "https://times1772525994.subxiandan.top:9604/v2b/paopaogou/api/v1/client/subscribe?token=f550e52b652c1458e99c585c7a209386"
     type: http
     interval: 86400
     health-check:
@@ -126,6 +126,7 @@ proxy-groups:
   - { name: Grok AI, <<: *default }
   - { name: Claude, <<: *default }
   - { name: Meta AI, <<: *default }
+  - { name: JetBrainsAI, <<: *default }
 
   # 国外
   - { name: GitHub, <<: *default }
@@ -392,6 +393,7 @@ rules:
   - RULE-SET,Telegram / Domain,国外
   - RULE-SET,Proxy / Domain,国外
   - RULE-SET,AutoProxy / Domain,国外
+  - RULE-SET,JetBrainsAI / Domain,JetBrainsAI
   - RULE-SET,Globe / Domain,国外
   - RULE-SET,Direct / Domain,国内
   - RULE-SET,China / Domain,国内
@@ -439,7 +441,8 @@ rule-providers:
   Nintend / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.list" }
   Proxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Proxy.list" }
   AutoProxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoProxy.list" }
-  Globe / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list" }
+  JetBrainsAI / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/JetBrainsAI.list" }
+  Globe / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/Global.list" }
   Direct / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Direct.list" }
   China / Domain: { <<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs" }
   China / IP: { <<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs" }
