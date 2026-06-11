@@ -395,6 +395,7 @@ rules:
   - RULE-SET,AutoProxy / Domain,国外
   - RULE-SET,JetBrainsAI / Domain,JetBrainsAI
   - RULE-SET,Globe / Domain,国外
+  - RULE-SET,AutoDirect / Domain,国内
   - RULE-SET,Direct / Domain,国内
   - RULE-SET,China / Domain,国内
   - RULE-SET,China / IP,国内,no-resolve
@@ -441,6 +442,7 @@ rule-providers:
   Nintend / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.list" }
   Proxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Proxy.list" }
   AutoProxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoProxy.list" }
+  AutoDirect / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoDirect.list" }
   JetBrainsAI / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/JetBrainsAI.list" }
   Globe / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/Global.list" }
   Direct / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Direct.list" }
