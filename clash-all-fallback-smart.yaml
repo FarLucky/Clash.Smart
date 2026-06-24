@@ -5,9 +5,9 @@
 # 机场节点订阅
 
 proxy-providers:
-  
-  PaoPaoDog:
-    url: "https://times1772525994.subxiandan.top:9604/v2b/paopaogou/api/v1/client/subscribe?token=f550e52b652c1458e99c585c7a209386"
+
+  NICE:
+    url: "http://8.134.143.129:5988/s/d203368ae1cbef40ce4e22870ce1ad35"
     type: http
     interval: 86400
     health-check:
@@ -15,16 +15,6 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
-
-#  EEOX:
-#    url: "https://api.eeox.net/api/v1/client/subscribe?token=f7ba1cfa73c42686a40c4fb9e9523861"
-#    type: http
-#    interval: 86400
-#    health-check:
-#      enable: true
-#      url: https://www.gstatic.com/generate_204
-#      interval: 300
-#    proxy: 直连
 
 proxies:
   - { name: 直连, type: direct }
@@ -139,7 +129,7 @@ proxy-groups:
 
   # 国内
   - { name: WhatsApp, <<: *default }
-    
+
   # 游戏
   - { name: Steam, <<: *default }
   - { name: Games, <<: *default }
