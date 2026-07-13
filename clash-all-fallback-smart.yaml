@@ -5,9 +5,8 @@
 # 机场节点订阅
 
 proxy-providers:
-
-  NICE:
-    url: "http://8.134.143.129:5988/s/d203368ae1cbef40ce4e22870ce1ad35"
+  HXY:
+    url: "https://43.139.248.121:9000/hxyunvip?token=d5e1017315918ac7cf13e387a7909fda"
     type: http
     interval: 86400
     health-check:
