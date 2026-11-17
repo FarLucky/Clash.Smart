@@ -86,12 +86,25 @@ default: &default
     - 直连
     - 所有-智选
     - 所有-手选
+
     - 香港-智选
     - 香港-故转
-    - 台湾-故转
+    - 香港-手选
+
     - 日本-故转
-    - 新加坡-故转
+    - 日本-智选
+    - 日本-手选
+
+    - 美国-智选
     - 美国-故转
+    - 美国-手选
+
+    - 台湾-智选
+    - 台湾-故转
+    - 台湾-手选
+
+    - 新加坡-故转
+
     - 其他-故转
     - 其他-智选
     - 拒绝
@@ -334,16 +347,15 @@ rules:
   - RULE-SET,TEST / Domain,Test
   - RULE-SET,Block / Domain,Block
 
-  # 与开发服务
+  # AI与开发服务
   - RULE-SET,GitHub / Domain,GitHub
   - RULE-SET,ChatGPT / Domain,AI
   - RULE-SET,Claude / Domain,AI
   - RULE-SET,Copilot / Domain,AI
-  - RULE-SET,Gemini / Domain,Gemini
-  - RULE-SET,Groq / Domain,AI
   - RULE-SET,Grok / Domain,AI
   - RULE-SET,Meta AI / Domain,AI
-  - RULE-SET,JetBrainsAI / Domain,JetBrainsAI
+  - RULE-SET,Gemini / Domain,Gemini
+  - RULE-SET,JetBrains / Domain,JetBrains
 
   # 厂商与搜索服务
   - RULE-SET,Microsoft / Domain,Microsoft
@@ -396,14 +408,13 @@ rule-providers:
   # 测试与拦截
   TEST / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Check.list" }
   Block / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Block.list" }
-  
-  # 与开发服务
+
+  # AI与开发服务
   GitHub / Domain: { <<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs" }
   ChatGPT / Domain: { <<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs" }
   Claude / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list" }
   Copilot / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Copilot.list" }
   Gemini / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Gemini.list" }
-  Groq / Domain: { <<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/groq.mrs" }
   Grok / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Grok.list" }
   Meta AI / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/MetaAi.list" }
   JetBrainsAI / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/JetBrainsAI.list" }
@@ -422,23 +433,23 @@ rule-providers:
   Twitter / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitter/Twitter.list" }
   TikTok / Domain: { <<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs" }
   WhatsApp / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.list" }
-  
+
   # 流媒体
   Youtube / Domain: { <<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs" }
-  
+
   # 游戏
   Steam / Domain: { <<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs" }
-  
+
   # 自定义规则
   AutoDirect / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoDirect.list" }
   AutoProxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/FarLucky/Clash.Smart/refs/heads/main/Rule/AutoProxy.list" }
-  
+
   # 国内直连规则
   Private / Domain: { <<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs" }
   Direct / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Direct.list" }
   China / Domain: { <<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs" }
   China / IP: { <<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs" }
-  
+
   # 通用国外规则
   Proxy / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Proxy.list" }
   Globe / Domain: { <<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list" }
